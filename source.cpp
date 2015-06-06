@@ -25,7 +25,9 @@ int *doubleCapacity(const int *list, int size) {
 	int new_size = size * 2;
 	int *new_list = new int[new_size];
 
-	for (int *curr = list; )
+	for (int i = 0; i < size; i++) {
+			new_list[i] = list[i];
+		}
 
 	return new_list;
 }
